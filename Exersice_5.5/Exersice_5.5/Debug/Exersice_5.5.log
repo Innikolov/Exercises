@@ -1,0 +1,5 @@
+﻿  main.c
+D:\Projects\FromBook\Exercises\Exersice_5.5\Exersice_5.5\main.c(30,25): warning C4047: 'function': 'size_t *' differs in levels of indirection from 'int'
+D:\Projects\FromBook\Exercises\Exersice_5.5\Exersice_5.5\main.c(30,23): warning C4024: 'strn_cpy': different types for formal and actual parameter 3
+D:\Projects\FromBook\Exercises\Exersice_5.5\Exersice_5.5\main.c(48,42): warning C4028: formal parameter 3 different from declaration
+  Exersice_5.5.vcxproj -> D:\Projects\FromBook\Exercises\Exersice_5.5\Debug\Exersice_5.5.exe

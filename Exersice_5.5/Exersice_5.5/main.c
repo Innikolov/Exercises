@@ -13,19 +13,27 @@
 //adds n symbols from string t to the end of string s.
 void strn_cat(char s[], char t[], size_t n);
 
+
+//copies n symbols from string s to empty string t.
+void strn_cpy(char* s, char* t, size_t* n);
+
+
 int main()
 {
 	char str1[100] = "Hi there! ";
 	char str2[] = "How are you? It's a lovelly day!";
-	strn_cat(str1, str2, 12);
+	char str3[100] = "abc";
 
+	strn_cat(str1, str2, 12);
 	printf("%s ", str1);
+
+	strn_cpy(str1, str3, 10);
+	printf("\n%s ", str3);
 }
 
 
 void strn_cat(char s[], char t[], size_t n)
 {
-	char* ptr = s;
 	int size = strlen(s);
 	unsigned int i = 0;
 
@@ -35,4 +43,15 @@ void strn_cat(char s[], char t[], size_t n)
 		i++;
 	}
 	s[size + i] = '\0';
+}
+
+void strn_cpy(char s[], char t[], size_t n) {
+
+	unsigned int i = 0;
+	while (n--)
+	{
+		t[i] = s[i];
+		i++;
+	}
+	t[i] = '\0';
 }
